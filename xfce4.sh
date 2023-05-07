@@ -1,10 +1,10 @@
 #!/bin/bash
 echo "[i] Updating and upgrading Kali (this will take a while)"
 sudo apt-get update -yes
-sudo apt-get --yes --force-yes dist-upgrade
+sudo apt-get dist-upgrade -yes
 
 echo "[i] Installing Xfce4 & xrdp (this will take a while as well)"
-sudo apt-get --yes --force-yes install kali-desktop-xfce xorg xrdp
+sudo apt-get install kali-desktop-xfce xorg xrdp -yes
 
 echo "[i] Configuring xrdp to listen to port 3390 (but not starting the service)"
 sed -i 's/port=3389/port=3390/g' /etc/xrdp/xrdp.ini
