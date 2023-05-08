@@ -40,3 +40,14 @@ If you encounter any issues with the script or have trouble connecting to your K
 3.	Check that your firewall is not blocking port 3390.
 4.	Verify that your RDP client is configured to connect to your Kali system on port 3390.
 
+### RDP Session Drops on Login
+
+If you encounter issues where the RDP session fails as soon as you login to the remote server, the issue could be that the username you are using is already logged into the system. If you are encountering this issue you will need to either log out of all sessions or login to the RDP session with a new user. 
+
+**Create a New User:**
+
+```
+sudo useradd -s /bin/bash -d /home/johnhandcock/ -p Password! -m -G sudo johnhandcock
+```
+
+
