@@ -5,24 +5,28 @@ Enabling RDP on a Kali desktop, whether it is a virtual machine or a remote syst
 To get started, simply follow these steps:
 
 1.	Open your terminal and run the following command:
-'''
+
+```
 sudo git clone https://github.com/CyberOneTechnologies/kalirdp.git
-'''
+```
 
 2.	Once the files are downloaded, navigate to the KaliRDP directory:
-'''
+
+```
 cd kalirdp/
-'''
+```
 
 3.	Make the script executable:
-'''
+
+```
 sudo chmod +x xfce4.sh
-'''
+```
 
 4.	Run the script:
-'''
+
+```
 sudo ./xfce4.sh
-'''
+```
 
 5.	Wait for the script to finish. This will take some time as it updates and upgrades your Kali system, installs Xfce4 and xrdp, and configures xrdp to listen on port 3390.
 
